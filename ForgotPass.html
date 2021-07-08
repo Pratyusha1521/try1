@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Forgot Password</title>
+	</head>
+ 	<body>
+		<h1>Password Reset<h1>
+<script>
+	function urTom()
+	{
+	with(document)
+	   {
+		
+	      if(getElementById("usern").value=="Tom")
+	           {
+		if(getElementById("cpasswd").value==getElementById("npasswd").value)
+		alert("Password changed successfully");
+	      	else
+	    	alert("New password and Confirm password does not match");
+	           }
+	     else
+	           alert("Invalid Username");
+	   }
+	}
+</script>
+	<table>
+	<tr>
+		<td>Username:</td>
+		<td><input type="text" id="usern"></td> </br>
+	</tr>
+	<tr>
+		<td>New Password:</td>
+		<td><input type="password" id="npasswd"></td>
+	</tr>
+	<tr>
+		<td>Confirm Password:</td>
+		<td><input type="password" id="cpasswd"></td>
+	</tr>
+	</table>
+		<input type="button" value="Reset Password" onClick="urTom()"/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="Login.html"><input type="button" value="Cancel Password Reset"></a>
+	
+	</body>
+</html>

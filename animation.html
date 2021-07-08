@@ -1,0 +1,17 @@
+<html>
+	<head>
+	<title>My Animation</title>
+	<script>
+		function imgChange(filename)
+		{
+document.images[0].src=filename;
+			//document.getElementById("MyImage").src=filename;
+		}
+	</script>
+	</head>
+	<body>
+		<img src="Tom.png" onMouseOver="imgChange('cat1.jpg')"
+				onMouseOut="imgChange('Tom.png')"
+				id="MyImage"/>
+	</body>
+</html>
